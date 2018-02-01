@@ -23,7 +23,7 @@ while (patternsCount > 0) {
     let word = strings.shift();
     let re = new RegExp(`(\\b${word}\\b)+`,'g');
     let result = toParse.match(re);
-    // If no matches found, leace the mathes == 0
+    // If no matches found, leave the mathes == 0
     if (result != undefined) {
         matches = result.length;
     }
